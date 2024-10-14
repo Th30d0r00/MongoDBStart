@@ -5,6 +5,10 @@ import de.hbrs.ia.model.SocialPerformanceRecord;
 
 import java.util.List;
 
+/**
+ * Control class for managing personal data
+ */
+
 
 public class ManagePersonalImpl implements ManagePersonal{
 

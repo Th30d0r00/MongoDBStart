@@ -11,6 +11,10 @@ import java.util.List;
 import static com.mongodb.client.model.Filters.eq;
 import static com.mongodb.client.model.Updates.push;
 
+/**
+ * Service for interacting with the database
+ */
+
 public class ManagePersonalService {
 
     MongoCollection<Document> salesManCollection;

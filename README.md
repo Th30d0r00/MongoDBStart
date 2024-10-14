@@ -1,74 +1,32 @@
-## Useful ressources for lecture Integration Architectures
-(Prof. Dr. Sascha Alda)
+## Includes Code for the following exercises:
 
-In this readme, you find various useful links especially for working with MongoDB together with the programming language Java. These will be useful especially for the exercise sheets no. 1 and 2.
+### Assignment No. 2 (Software for managing Salesmen; Due Date Oct 22th, 2024; Upload on DIArchitect!)
 
+As mentioned in one of the documents, the source code of the program for managing salesmen and their social performance 
+records has been hidden by the admin. However, a portion of the source has been revealed. You can download the Java 
+codes from LEA (folder: “Source Codes and Scripts”) or from the GitHub repository (link follows later!)
 
-### Prerequisites
+The code shows the interface of a control class, which can be used to manage information on salesmen and their 
+social performance records (part B of a bonus computation sheet). The implementation of the interface will be used
+to access to a MongoDB database for storing and retrieving performance records of single employees. 
+The internals of the MongoDB could not be identified, so you are asked to provide your own implementation.
 
- Access to a **MongoDB** server is necessary. If you don't have one already, you should download the community server at:
- https://www.mongodb.com/try/download/community
+Take the opportunity to introduce yourself to the database management system (DBMS) MongoDB. 
+MongoDB is part of the MEAN-stack (the ‘M’ of MEAN), which has become a standard solution to implement full stack Web 
+applications. We will also learn the remaining “letters” during the next weeks and months. However, feel free to learn 
+at least a bit more on MEAN in terms of self-study. See the links below this assignment as a recommended pool of 
+appropriate resources to these topics.
 
-or (even better) here:
+a.) 
+Please provide a Java program that uses the interface of a control class for managing salesmen and their 
+performance records. In the backend, integrate a local MongoDB database that contains of two collections for 
+storing general data for salesmen as well as their social performance records. Please make suitable assumptions on the 
+schema of the two collections.
 
-https://www.mongodb.com/docs/manual/administration/install-community/
+b.) 
+Does the interface of the control class fulfill the CRUD pattern entirely? If not, please add the 
+missing operations and refactor the given interface accordingly. No implementation of the “U” is required 
+(exception: adding further social performance records to a salesman).
 
-Community Version 4.2 and 7.0 (latest release) work fine with our examples.
- 
-### Further nice links for supporting MongoDB
- 
-A fully comprehensive MongoDB Tutorial for Java:<br />
-https://www.mongodb.com/docs/drivers/java/sync/current/quick-start/
- 
-A nice tutorial for MongoDB with a nice introduction and installation guidelines:<br />
-https://www.baeldung.com/java-mongodb
-
-A good overview how to implement queries and insert-operations in MongoDB can be found here: <br />
-https://www.mongodb.com/docs/manual/crud/
-
- SQL to MongoDB Mapping Chart – another nice page :-!!<br />
- https://docs.mongodb.com/manual/reference/sql-comparison/
- 
- There are obviously many tools for the administration of a MongoDB, but I personally like this one, since you find a lot of nice examples on how to define queries. Also, examples for JavaScript programs are given and well documented!<br /> 
- https://nosqlbooster.com/downloads
- 
- One of the most mature tools for maintaining data in a MongoDB database is the MongoDB compass that can be downloaded for free (commercial version available):<br /> 
- https://www.mongodb.com/products/compass
- 
- Please keep in mind that MongoDB does not possess a JOIN-operator. Instead, a lookup-Operator can be used to aggregate two collections. Here you find a nice demo with explanations:<br /> 
- https://www.stackchief.com/tutorials/$lookup%20Examples%20%7C%20MongoDB
- 
- In general, be aware that there are many solutions for defining a concrete query!
- 
- A simplified programming model to use MongoDB in Java is given by the platform Spring Boot, which simplifies the programming effort dramatically:<br />
- https://spring.io/guides/gs/accessing-data-mongodb/
- 
- You need a CLI application? Here is another cool SpringBoot library that eases the implementation of an CLI:<br />
- https://spring.io/projects/spring-shell <br />
- https://www.baeldung.com/spring-shell-cli <br />
-
-New in Junit? Check out this page: <br />
-https://www.baeldung.com/junit-5
- 
-
-### Support
-In some versions, the Java compiler from a fresh Maven project is set version 1.5, which will make the new version obsolete. You have to adjust the compiler level:<br />
-https://stackoverflow.com/questions/30690295/removing-warning-messages-on-intellij-idea-while-building-java-project
-
-### IDE
-We recommend installing and using the IDE IntelliJ. As a member of the University you can register yourself easily in order to obtain the Ultimate-Version, which is a fully equipped version with the latest features. The necessary key expires after one year, but can easily be refreshed afterwards. <br>
-https://www.jetbrains.com/idea/
-
-### Resources for UML tools:
-
-UMLet 14.3
-A good and well-aranged desktop tool for modelling UML. Installations can be found for Windows / MAC / Linux. The usability is a bit tricky in the beginning, but somewhat effective a short while ;-)
-http://www.umlet.com/
-
-Draw.io
-A lean and browser-based tool, thus, no installation of a local machine is necessary. Documents can be stored in various formats.
-https://app.diagrams.net/
-
-Mermaid:
-Mermaid is a DSL-based Editor, that supports various diagram types. It can also be integrated within a markdown document, see [here](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/)
-https://mermaid.live
+c.) Test your application sufficiently by developing a Junit-Test Case. If possible, provide roundtrip test to ensure, 
+hat now data waste is given after the execution of a test.

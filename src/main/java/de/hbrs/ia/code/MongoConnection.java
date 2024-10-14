@@ -6,6 +6,10 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 
+/**
+ * Class for managing the connection to the database
+ */
+
 public class MongoConnection implements AutoCloseable {
     private static MongoConnection instance;
     private final MongoClient mongoClient;
@@ -28,10 +32,6 @@ public class MongoConnection implements AutoCloseable {
 
     public MongoCollection<Document> getCollection() {
         return collection;
-    }
-
-    public MongoClient getMongoClient() {
-        return mongoClient;
     }
 
     @Override
