@@ -46,14 +46,21 @@ public class ManagePersonalService {
 
     public List<SocialPerformanceRecord> readSocialPerformanceRecord(SalesMan salesMan) {
         List <Document> Documents = socialPerformanceRecordCollection.find(
-                eq("SalesManId", salesMan.getId())).into(new ArrayList<>());
+                eq("salesManId", salesMan.getId())).into(new ArrayList<>());
         List <SocialPerformanceRecord> socialPerformanceRecords = new ArrayList<>();
         for (Document document : Documents) {
-            Integer id = (Integer) document.get("SalesManId");
+            Integer id = (Integer) document.get("id");
+            Integer sid = (Integer) document.get("salesManId");
             Integer year = (Integer) document.get("year");
-            Double teamworkRating = (Double) document.get("teamworkRating");
-            Double communicationRating = (Double) document.get("communicationRating");
-            SocialPerformanceRecord socialPerformanceRecord = new SocialPerformanceRecord(id, year, teamworkRating, communicationRating);
+            Double LeadershipCompetence = (Double) document.get("LeadershipCompetence");
+            Double opennessToEmployees = (Double) document.get("opennessToEmployees");
+            Double socialBehaviorToEmployee = (Double) document.get("socialBehaviorToEmployee");
+            Double attitudeTowardsClient = (Double) document.get("attitudeTowardsClient");
+            Double communicationSkills = (Double) document.get("communicationSkills");
+            Double IntegrityToCompany = (Double) document.get("IntegrityToCompany");
+            SocialPerformanceRecord socialPerformanceRecord = new SocialPerformanceRecord(id, sid, year,
+                    LeadershipCompetence, opennessToEmployees, socialBehaviorToEmployee, attitudeTowardsClient,
+                    communicationSkills, IntegrityToCompany);
             socialPerformanceRecords.add(socialPerformanceRecord);
         }
         return socialPerformanceRecords;
@@ -93,7 +100,7 @@ public class ManagePersonalService {
     }
 
     public void deleteSocialPerformanceRecord(SocialPerformanceRecord record) {
-        socialPerformanceRecordCollection.deleteOne(new Document("SalesManId", record.getId()));
+        socialPerformanceRecordCollection.deleteOne(new Document("salesManId", record.getSalesManId()));
     }
 
 

@@ -4,25 +4,42 @@ import org.bson.Document;
 import org.bson.types.ObjectId;
 
 public class SocialPerformanceRecord {
-
-    private int id;
+    private Integer id;
+    private Integer salesManId;
     private int year;
-    private double teamworkRating;
-    private double communicationRating;
+    private double LeadershipCompetence;
+    private double opennessToEmployees;
+    private double socialBehaviorToEmployee;
+    private double attitudeTowardsClient;
+    private double communicationSkills;
+    private double IntegrityToCompany;
 
-    public SocialPerformanceRecord(int id, int year, Double teamworkRating, Double communicationRating) {
+    public SocialPerformanceRecord(int id, Integer salesManId, int year, double LeadershipCompetence, double opennessToEmployees, double socialBehaviorToEmployee, double attitudeTowardsClient, double communicationSkills, double IntegrityToCompany) {
         this.id = id;
+        this.salesManId = salesManId;
         this.year = year;
-        this.teamworkRating = teamworkRating;
-        this.communicationRating = communicationRating;
+        this.LeadershipCompetence = LeadershipCompetence;
+        this.opennessToEmployees = opennessToEmployees;
+        this.socialBehaviorToEmployee = socialBehaviorToEmployee;
+        this.attitudeTowardsClient = attitudeTowardsClient;
+        this.communicationSkills = communicationSkills;
+        this.IntegrityToCompany = IntegrityToCompany;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
+    }
+
+    public Integer getSalesManId() {
+        return salesManId;
+    }
+
+    public void setSalesManId(Integer salesManId) {
+        this.salesManId = salesManId;
     }
 
     public int getYear() {
@@ -33,28 +50,65 @@ public class SocialPerformanceRecord {
         this.year = year;
     }
 
-    public double getTeamworkRating() {
-        return teamworkRating;
+    public double getLeadershipCompetence() {
+        return LeadershipCompetence;
     }
 
-    public void setTeamworkRating(float teamworkRating) {
-        this.teamworkRating = teamworkRating;
+    public void setLeadershipCompetence(double leadershipCompetence) {
+        LeadershipCompetence = leadershipCompetence;
     }
 
-    public double getCommunicationRating() {
-        return communicationRating;
+    public double getOpennessToEmployees() {
+        return opennessToEmployees;
     }
 
-    public void setCommunicationRating(float communicationRating) {
-        this.communicationRating = communicationRating;
+    public void setOpennessToEmployees(double opennessToEmployees) {
+        this.opennessToEmployees = opennessToEmployees;
+    }
+
+    public double getSocialBehaviorToEmployee() {
+        return socialBehaviorToEmployee;
+    }
+
+    public void setSocialBehaviorToEmployee(double socialBehaviorToEmployee) {
+        this.socialBehaviorToEmployee = socialBehaviorToEmployee;
+    }
+
+    public double getAttitudeTowardsClient() {
+        return attitudeTowardsClient;
+    }
+
+    public void setAttitudeTowardsClient(double attitudeTowardsClient) {
+        this.attitudeTowardsClient = attitudeTowardsClient;
+    }
+
+    public double getCommunicationSkills() {
+        return communicationSkills;
+    }
+
+    public void setCommunicationSkills(double communicationSkills) {
+        this.communicationSkills = communicationSkills;
+    }
+
+    public double getIntegrityToCompany() {
+        return IntegrityToCompany;
+    }
+
+    public void setIntegrityToCompany(double integrityToCompany) {
+        IntegrityToCompany = integrityToCompany;
     }
 
     public Document toDocument() {
         org.bson.Document document = new Document();
-        document.append("SalesManId", this.id);
+        document.append("id", this.id);
+        document.append("salesManId", this.salesManId);
         document.append("year", this.year);
-        document.append("teamworkRating", this.teamworkRating);
-        document.append("communicationRating", this.communicationRating);
+        document.append("LeadershipCompetence", this.LeadershipCompetence);
+        document.append("opennessToEmployees", this.opennessToEmployees);
+        document.append("socialBehaviorToEmployee", this.socialBehaviorToEmployee);
+        document.append("attitudeTowardsClient", this.attitudeTowardsClient);
+        document.append("communicationSkills", this.communicationSkills);
+        document.append("IntegrityToCompany", this.IntegrityToCompany);
         return document;
     }
 }

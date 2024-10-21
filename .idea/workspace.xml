@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="edaded6e-dc06-4294-a7b2-28dc1e4f1dd7" name="Changes" comment="added files">
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hbrs/ia/code/ManagePersonalImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hbrs/ia/code/ManagePersonalImpl.java" afterDir="false" />
+    <list default="true" id="edaded6e-dc06-4294-a7b2-28dc1e4f1dd7" name="Changes" comment="added comments and updated README.md">
+      <change afterPath="$PROJECT_DIR$/.idea/Git Codes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/hbrs/ia/code/ManagePersonalService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hbrs/ia/code/ManagePersonalService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hbrs/ia/code/MongoConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hbrs/ia/code/MongoConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/hbrs/ia/model/SocialPerformanceRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hbrs/ia/model/SocialPerformanceRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/JUnitTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/JUnitTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/hbrs/ia/code/ManagePersonalImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/hbrs/ia/code/ManagePersonalImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/hbrs/ia/code/ManagePersonalService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/hbrs/ia/code/ManagePersonalService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/hbrs/ia/code/MongoConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/hbrs/ia/code/MongoConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/de/hbrs/ia/model/SocialPerformanceRecord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/de/hbrs/ia/model/SocialPerformanceRecord.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/HighPerformanceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/test/JUnitTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/test/JUnitTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +49,11 @@
     "JUnit.HighPerformanceTest.insertSalesMan.executor": "Run",
     "JUnit.HighPerformanceTest.insertSalesManMoreObjectOriented.executor": "Run",
     "JUnit.JUnitTests.roundTripTest.executor": "Run",
+    "JUnit.JUnitTests.testAddAndReadSalesMen.executor": "Run",
+    "JUnit.JUnitTests.testAddAndReadSocialPerformanceRecord.executor": "Run",
+    "JUnit.JUnitTests.testAddSocialPerformanceRecord.executor": "Run",
     "JUnit.JUnitTests.testReadAllSalesMen.executor": "Run",
+    "JUnit.JUnitTests.testSocialPerformanceRecord.executor": "Run",
     "JUnit.JUnitTests.testaddSocialPerformanceRecord.executor": "Run",
     "JUnit.RoundTripTest.roundTripTest.executor": "Run",
     "JUnit.RoundTripTest.testCreateSalesMan.executor": "Run",
@@ -50,6 +62,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/theodor/Library/CloudStorage/OneDrive-HochschuleBonn-Rhein-Sieg/5.Semester/Integration Architectures/Übung 1/Git Codes",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -63,39 +76,7 @@
       <recent name="de.hbrs.ia.code" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.HighPerformanceTest.insertSalesManMoreObjectOriented">
-    <configuration name="HighPerformanceTest.insertSalesMan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MongoDBStart" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.HighPerformanceTest" />
-      <option name="METHOD_NAME" value="insertSalesMan" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HighPerformanceTest.insertSalesManMoreObjectOriented" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MongoDBStart" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.HighPerformanceTest" />
-      <option name="METHOD_NAME" value="insertSalesManMoreObjectOriented" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.JUnitTests.testAddAndReadSalesMen">
     <configuration name="JUnitTests.roundTripTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MongoDBStart" />
       <extension name="coverage">
@@ -112,7 +93,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JUnitTests.testReadAllSalesMen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JUnitTests.testAddAndReadSalesMen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MongoDBStart" />
       <extension name="coverage">
         <pattern>
@@ -122,13 +103,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.JUnitTests" />
-      <option name="METHOD_NAME" value="testReadAllSalesMen" />
+      <option name="METHOD_NAME" value="testAddAndReadSalesMen" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JUnitTests.testaddSocialPerformanceRecord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JUnitTests.testAddAndReadSocialPerformanceRecord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MongoDBStart" />
       <extension name="coverage">
         <pattern>
@@ -138,7 +119,39 @@
       </extension>
       <option name="PACKAGE_NAME" value="test" />
       <option name="MAIN_CLASS_NAME" value="test.JUnitTests" />
-      <option name="METHOD_NAME" value="testaddSocialPerformanceRecord" />
+      <option name="METHOD_NAME" value="testAddAndReadSocialPerformanceRecord" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JUnitTests.testAddSocialPerformanceRecord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MongoDBStart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.JUnitTests" />
+      <option name="METHOD_NAME" value="testAddSocialPerformanceRecord" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JUnitTests.testSocialPerformanceRecord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MongoDBStart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.JUnitTests" />
+      <option name="METHOD_NAME" value="testSocialPerformanceRecord" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -146,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.HighPerformanceTest.insertSalesManMoreObjectOriented" />
-        <item itemvalue="JUnit.HighPerformanceTest.insertSalesMan" />
+        <item itemvalue="JUnit.JUnitTests.testAddAndReadSalesMen" />
+        <item itemvalue="JUnit.JUnitTests.testAddAndReadSocialPerformanceRecord" />
         <item itemvalue="JUnit.JUnitTests.roundTripTest" />
-        <item itemvalue="JUnit.JUnitTests.testaddSocialPerformanceRecord" />
-        <item itemvalue="JUnit.JUnitTests.testReadAllSalesMen" />
+        <item itemvalue="JUnit.JUnitTests.testSocialPerformanceRecord" />
+        <item itemvalue="JUnit.JUnitTests.testAddSocialPerformanceRecord" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +186,17 @@
       <workItem from="1728585381377" duration="3811000" />
       <workItem from="1728630509990" duration="7531000" />
       <workItem from="1728818951347" duration="1859000" />
-      <workItem from="1728890955125" duration="10595000" />
+      <workItem from="1728890955125" duration="11068000" />
+      <workItem from="1728905862780" duration="4000" />
+      <workItem from="1728996773360" duration="320000" />
+      <workItem from="1729013666616" duration="259000" />
+      <workItem from="1729064032256" duration="9000" />
+      <workItem from="1729166036034" duration="265000" />
+      <workItem from="1729166440815" duration="222000" />
+      <workItem from="1729511231479" duration="1046000" />
+      <workItem from="1729512287129" duration="3000" />
+      <workItem from="1729512433035" duration="1008000" />
+      <workItem from="1729513444637" duration="1806000" />
     </task>
     <task id="LOCAL-00001" summary="added files">
       <option name="closed" value="true" />
@@ -183,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728905125545</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added comments and updated README.md">
+      <option name="closed" value="true" />
+      <created>1728905673647</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728905673647</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,18 +222,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added files" />
-    <option name="LAST_COMMIT_MESSAGE" value="added files" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/test/JUnitTests.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="added comments and updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="added comments and updated README.md" />
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">
